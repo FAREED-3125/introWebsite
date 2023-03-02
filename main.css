@@ -1,0 +1,151 @@
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 18px;
+    font-family: 'Epilogue', sans-serif;
+    background-color: var(--Almost-White);
+    line-height: 1.2rem;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header #nav-bar {
+
+    margin-right: auto;
+}
+
+header #nav-bar a {
+    color: var(--Medium-Gray);
+}
+
+@media(max-width:372px) {
+    .mobile-nav-bar {
+        display: none;
+    }
+
+    .onclick-mobile-nav-bar {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, .5);
+        position: absolute;
+        display: grid;
+        grid-template-columns: 100px 1fr;
+
+    }
+
+    .onclick-mobile-nav-bar .cross-bar {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10px;
+        padding: 10px;
+    }
+
+    .onclick-mobile-nav-bar nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .onclick-mobile-nav-bar .button {
+        display: block;
+        width: 100px;
+        background-color: var(--Almost-White);
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .button-reg {
+        border: 1.5px solid var(--Almost-Black);
+        border-radius: 10px;
+    }
+
+    .onclick-mobile-nav-bar nav a {
+        color: var(--Medium-Gray);
+        padding: 10px 15px;
+
+    }
+
+    header #nav-bar,
+    header .button {
+        display: none;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .sent-1 {
+        text-align: center;
+        padding: 10px;
+
+    }
+
+    .sent-1 h2 {
+        margin: 15px 0px;
+    }
+
+    .sent-1 p {
+        font-size: 15px;
+        text-align: center;
+        color: var(--Medium-Gray);
+    }
+
+    .bottom-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .bottom-section img {
+        width: 55px;
+    }
+
+    .section-para-btn {
+        background-color: var(--Almost-Black);
+        color: var(--Almost-White);
+        margin: 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+        text-align: center;
+        background-color: var(--Almost-Black);
+        color: var(--Medium-Gray);
+        padding: 10px;
+    }
+
+
+    .right-sub {
+        background-color: var(--Almost-White);
+    }
+
+}

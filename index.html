@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front-End Mentor</title>
+  <link rel="stylesheet" href="/main.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+  </style>
+</head>
+
+<body>
+  <section class="mobile-nav-bar" id="mobile-nav-bar">
+    <div class="left-sub"></div>
+    <div class="right-sub">
+      <div class="cross-bar" id="close-menu"><img src="/images/icon-close-menu.svg" alt="" onclick="closeMenu();"></div>
+      <nav id="nav-bar">
+        <a href="" class="nav-links" id="features">features <svg width="10" height="6"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+          </svg></a>
+        <a href="" class="nav-links" id="company">Company<svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+            <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+          </svg></a>
+        <a href="" class="nav-links" id="careers">Careers</a>
+        <a href="" class="nav-links" id="about">About</a>
+      </nav>
+      <div class="btn">
+        <button id="Login" class="button">
+          Login
+        </button>
+        <button id="register" class="button button-reg">
+          Register
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <header>
+    <div class="logo">
+      <img src="/images/logo.svg" alt="">
+    </div>
+    <nav id="nav-bar">
+      <a href="" class="nav-links" id="features">features <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+          <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+        </svg></a>
+      <a href="" class="nav-links" id="company">Company<svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+          <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+        </svg></a>
+      <a href="" class="nav-links" id="careers">Careers</a>
+      <a href="" class="nav-links" id="about">About</a>
+    </nav>
+    <button id="Login" class="button">
+      Login
+    </button>
+    <button id="register" class="button">
+      Register
+    </button>
+    <div class="menu" id="open-menu" onclick="openMenu();">
+      <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg">
+        <g fill="#151515" fill-rule="evenodd">
+          <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
+        </g>
+      </svg>
+
+    </div>
+
+  </header>
+  <section class="image">
+    <img src="/images/image-hero-mobile.png" alt="" width="100%">
+  </section>
+  <section class="sent-1">
+    <h2>Mark remote work </h2>
+    <p>
+      Get your team in sync, no matter your location, Streamline processes,create team rituals, and watch productivity
+      soar.
+    </p>
+    <button class="section-para-btn">Learn more</button>
+  </section>
+  <div class="bottom-section">
+    <div><img src="/images/client-databiz.svg" alt="" width="75px"> </div>
+    <div> <img src="/images/client-audiophile.svg" alt="" width="=75px"></div>
+    <div><img src="/images/client-meet.svg" alt="" width="75px"></div>
+    <div> <img src="/images/client-maker.svg" alt="" width="75px"></div>
+  </div>
+  <footer>
+    <p>Front-end Metor Projects <span>&copy;</span>since 2012.</p>
+  </footer>
+  <script src="/images/main.js"></script>
+</body>
+
+</html>
